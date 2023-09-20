@@ -3,10 +3,18 @@ from stanfordkarel import move, turn_left, put_beeper, run_karel_program
 def main():
     pass
     pick_beeper()
-    row()
+    row_2()
+
 
 if __name__ == "__main__":
     run_karel_program("challenge-v-wall")
+
+
+    pick_beeper()
+    row()
+
+
+
 def sweep():
     while front_is_clear():
         move()
@@ -31,7 +39,22 @@ def turn_right():
     turn_left()
     turn_left()
 
+def row_2():
+    turn_left()
+    sweep()
+    turn_right()
+    move()
+    turn_right()
+    sweep()
+    turn_left()
+    move()
+    turn_left()
+    sweep()
+    turn_left()
+    turn_left()
+    sweep()
 
+    sweep()
 def row():
     while front_is_clear():
         sweep()
