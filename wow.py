@@ -7,7 +7,7 @@ def main():
 
 
 if __name__ == "__main__":
-    run_karel_program("challenge-v-wall")
+    run_karel_program("challenge-v-wall3")
 
 
     pick_beeper()
@@ -53,8 +53,39 @@ def row_2():
     turn_left()
     turn_left()
     sweep()
-
+    turn_left()
+    move()
+    turn_left()
     sweep()
+    turn_right()
+    move()
+    turn_right()
+    sweep()
+    turn_left()
+    move()
+    turn_left()
+    sweep()
+    turn_right()
+    move()
+    turn_right()
+    sweep()
+    turn_left()
+    move()
+    turn_left()
+    sweep()
+    turn_left()
+    turn_left()
+    sweep()
+    turn_left()
+    move()
+    turn_left()
+    sweep()
+    turn_right()
+    move()
+    turn_right()
+    sweep()
+
+
 def row():
     while front_is_clear():
         sweep()
