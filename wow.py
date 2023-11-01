@@ -3,6 +3,11 @@ from stanfordkarel import move, turn_left, put_beeper, front_is_blocked, run_kar
 def move_if_blocked_turn_left():
     if front_is_blocked():
         turn_left()
+        move()
+        turn_right()
+        move()
+        turn_right()
+        move()
     else:
         move()
 
@@ -12,7 +17,21 @@ def test_2():
     change_right_top()
     sweep()
     change_right_bottom()
+    sweep()
+    change_right_top()
+    sweep()
+    change_right_bottom()
+    sweep()
+    move_if_blocked_turn_left()
+    turn_left()
+    sweep()
+    reverse_change_right_top()
 
+def reverse_change_right_top():
+    turn_left()
+    move()
+    turn_left()
+    sweep()
 def test():
     test_2()
 
