@@ -32,8 +32,11 @@ def reverse_change_right_top():
     move()
     turn_left()
     sweep()
-def test():
-    test_2()
+def move_right():
+    turn_left()
+    move()
+    move()
+
 
 
 def change_right_bottom():
@@ -136,7 +139,9 @@ def row():
 
 def main():
     pick_beeper()
-    test()
+    test_2()
+    move_right()
+    test_2()
 
 if __name__ == "__main__":
     run_karel_program("challenge-v-wall3")
